@@ -1,7 +1,7 @@
 {
   "name": "modulo-22",
   "version": "1.0.0",
-  "description": "Cypress Tests for EBAC",
+  "description": "Cypress Tests for EBAC MODULO 22",
   "main": "index.js",
   "scripts": {
     "start": "npx serverest",
