@@ -11,7 +11,7 @@
     "verify-cypress": "npx cypress verify",
     "permissions": "chmod +x ./node_modules/.bin/cypress"
   },
-  "author": "GabrielThiego",
+  "author": "SamuelPlauto",
   "license": "ISC",
   "dependencies": {
     "cypress-multi-reporters": "^1.5.0",
