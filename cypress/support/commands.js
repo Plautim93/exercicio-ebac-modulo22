@@ -10,24 +10,30 @@ Cypress.Commands.add('login', (email, password) => {
   cy.get('[data-testid="btnLogin"]').click(); 
 });
 
-Cypress.Commands.add('addItemToCart', () => {
-  cy.get('[data-testid="productDetails"]', { timeout: 30000 })
+Cypress.Commands.add('addItemToCart', () => {  
+cy.get('[data-testid="banner"]', { timeout: 15000 })
+    .should('be.visible')
+    .click(); 
+  
+  cy.get('[data-testid="productDetails"]', { timeout: 15000 })
     .first()
     .click({ force: true });
   
   cy.get('[data-testid="addToCart"] > .css-146c3p1', { timeout: 15000 })
     .should('be.visible')
-    .click();
+    .click(); 
 
-  cy.get('[href="/Tab/Home"] > .r-g6644c').click();
+  cy.get('[href="/Tab/Home"] > .r-g6644c').click();  
 
   cy.get('[style="background-color: rgb(242, 242, 242);"] > :nth-child(1) > :nth-child(1) > :nth-child(1) > .r-1d5kdc7 > :nth-child(1) > :nth-child(1) > .r-13awgt0 > :nth-child(1) > .r-mh9cjk > .r-18u37iz > :nth-child(2) > .r-lrvibr').click();
 });
 
 Cypress.Commands.add('completeCheckout', () => {
-  cy.get('[data-testid="selectAddressOrContinueToPayment"]', { timeout: 15000 })
-    .click({ force: true });
+  cy.get('[data-testid="selectAddressOrContinueToPayment"]', { timeout: 10000 })
+    .should('be.visible')
+    .click();  
 
-  cy.get('[data-testid="completeCheckout"]', { timeout: 15000 })
-    .click({ force: true });
+  cy.get('[data-testid="completeCheckout"]', { timeout: 10000 })
+    .should('be.visible')
+    .click(); 
 });
