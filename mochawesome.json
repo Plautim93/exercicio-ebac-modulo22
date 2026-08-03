@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2026-08-03T15:24:13.274Z",
-    "end": "2026-08-03T15:24:38.777Z",
-    "duration": 25503,
+    "start": "2026-08-03T15:34:04.890Z",
+    "end": "2026-08-03T15:34:26.418Z",
+    "duration": 21528,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "490e597f-cde2-4a5f-a284-c52f2d2f584f",
+      "uuid": "683113fa-ddde-412e-a6bd-9900308c856b",
       "title": "",
       "fullFile": "cypress/e2e/checkout.cy.js",
       "file": "cypress/e2e/checkout.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e8e88f6c-b712-45b8-bfae-948a0be2af86",
+          "uuid": "bb76544e-ae84-49db-9513-2e0ddc469663",
           "title": "Fluxo de Compra após Login - EBAC Store",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve adicionar o item ao carrinho e finalizar a compra",
               "fullTitle": "Fluxo de Compra após Login - EBAC Store Deve adicionar o item ao carrinho e finalizar a compra",
               "timedOut": null,
-              "duration": 21904,
+              "duration": 21355,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `[data-testid=\"banner\"]`, but never found it.\n    at Context.eval (webpack://modulo-22/./cypress/support/commands.js:15:5)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:140147:43)",
                 "diff": null
               },
-              "uuid": "65178125-f954-41a0-8a79-de471e37f966",
-              "parentUUID": "e8e88f6c-b712-45b8-bfae-948a0be2af86",
+              "uuid": "f6c56c36-0e84-4443-a351-5cd958e9990b",
+              "parentUUID": "bb76544e-ae84-49db-9513-2e0ddc469663",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "65178125-f954-41a0-8a79-de471e37f966"
+            "f6c56c36-0e84-4443-a351-5cd958e9990b"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 21904,
+          "duration": 21355,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

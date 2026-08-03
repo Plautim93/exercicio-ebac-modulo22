@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2026-08-03T15:24:51.735Z",
-    "end": "2026-08-03T15:25:54.742Z",
-    "duration": 63007,
+    "start": "2026-08-03T15:34:33.641Z",
+    "end": "2026-08-03T15:35:10.280Z",
+    "duration": 36639,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "327a9426-db96-4129-bfca-4af38ef5d72d",
+      "uuid": "f4f60571-1a74-4540-8e03-49d634e91ff3",
       "title": "",
       "fullFile": "cypress/e2e/account/createAccount.cy.js",
       "file": "cypress/e2e/account/createAccount.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "10434c77-4212-4edc-85b5-58b7e2b70dec",
+          "uuid": "6180806b-9a44-431d-8a04-9e2ee8b51043",
           "title": "Fluxo de Criação de Conta - EBAC Store",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve criar uma conta com sucesso e verificar no Profile",
               "fullTitle": "Fluxo de Criação de Conta - EBAC Store Deve criar uma conta com sucesso e verificar no Profile",
               "timedOut": null,
-              "duration": 60413,
+              "duration": 36584,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -47,12 +47,12 @@
               "context": null,
               "code": "const userData = {\n  firstName: 'Teste',\n  lastName: 'Sobrenome',\n  phone: '1234567890',\n  email: 'teste1@exemplo.com',\n  password: 'senha123'\n};\n_signupPage.default.visit();\n_signupPage.default.fillForm(userData);\n_signupPage.default.submit();\ncy.get('[href=\"/Tab/Account\"] > .r-g6644c').click();\ncy.get('[data-testid=\"CustomerName\"]').should('exist');",
               "err": {
-                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping all of the remaining tests.",
-                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping all of the remaining tests.\n    at timedOutWaitingForPageLoad (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:132731:64)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:133725:16)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://modulo-22/./cypress/support/commands.js:3:5)",
+                "message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is not visible:\n\n`<span class=\"css-1jxf684 r-g6644c r-1enofrn r-1yt7n81\" style=\"color: rgb(51, 144, 124);\">Profile</span>`\n\nThis element `<span.css-1jxf684.r-g6644c.r-1enofrn.r-1yt7n81>` is not visible because its parent `<div.css-175oi2r.r-5kkj8d.r-1p0dtai.r-1d2f490.r-zchlnj.r-105ug2t>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is not visible:\n\n`<span class=\"css-1jxf684 r-g6644c r-1enofrn r-1yt7n81\" style=\"color: rgb(51, 144, 124);\">Profile</span>`\n\nThis element `<span.css-1jxf684.r-g6644c.r-1enofrn.r-1yt7n81>` is not visible because its parent `<div.css-175oi2r.r-5kkj8d.r-1p0dtai.r-1d2f490.r-zchlnj.r-105ug2t>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at runVisibilityCheck (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:147001:58)\n    at Object.isStrictlyVisible (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:147015:10)\n    at runAllChecks (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:113413:26)\n    at retryActionability (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:113481:16)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:4285:29)\n    at whenStable (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:145828:68)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:145769:14)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1671:18)\n    at Promise._fulfill (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1615:18)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:5420:46)\nFrom Your Spec Code:\n    at Context.eval (webpack://modulo-22/./cypress/e2e/account/createAccount.cy.js:24:48)",
                 "diff": null
               },
-              "uuid": "53163ba9-b223-4f4e-b97a-115d8b74eba1",
-              "parentUUID": "10434c77-4212-4edc-85b5-58b7e2b70dec",
+              "uuid": "0cbf017e-7086-4c24-b1cd-866289a7452c",
+              "parentUUID": "6180806b-9a44-431d-8a04-9e2ee8b51043",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "53163ba9-b223-4f4e-b97a-115d8b74eba1"
+            "0cbf017e-7086-4c24-b1cd-866289a7452c"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 60413,
+          "duration": 36584,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
