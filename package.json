@@ -1,0 +1,30 @@
+{
+  "name": "modulo-22",
+  "version": "1.0.0",
+  "description": "Cypress Tests for EBAC MODULO 22",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx serverest",
+    "cy:run": "npx cypress run",
+    "cy:report": "npx mochawesome-merge ./mochawesome-report/mochawesome*.json > mochawesome-report/report.json && npx marge mochawesome-report/report.json",
+    "test": "npx cypress run",
+    "verify-cypress": "npx cypress verify",
+    "permissions": "chmod +x ./node_modules/.bin/cypress"
+  },
+  "author": "SamuelPlauto",
+  "license": "ISC",
+  "dependencies": {
+    "cypress-multi-reporters": "^1.5.0",
+    "glob": "^11.0.1",
+    "joi": "^17.4.2",
+    "mocha": "^9.1.0",
+    "mochawesome-report-generator": "^5.2.0"
+  },
+  "devDependencies": {
+    "cypress": "^14.3.2",
+    "marge": "^1.0.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "serverest": "^1.1.7"
+  }
+}
