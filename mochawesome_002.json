@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2026-08-03T15:34:33.641Z",
-    "end": "2026-08-03T15:35:10.280Z",
-    "duration": 36639,
+    "start": "2026-08-03T15:44:10.348Z",
+    "end": "2026-08-03T15:44:17.695Z",
+    "duration": 7347,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f4f60571-1a74-4540-8e03-49d634e91ff3",
+      "uuid": "14f568dc-8240-48ff-846e-94ed7a093e46",
       "title": "",
       "fullFile": "cypress/e2e/account/createAccount.cy.js",
       "file": "cypress/e2e/account/createAccount.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6180806b-9a44-431d-8a04-9e2ee8b51043",
+          "uuid": "d8cb1ca5-4d03-4ab1-b2ee-82cd741eba18",
           "title": "Fluxo de Criação de Conta - EBAC Store",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve criar uma conta com sucesso e verificar no Profile",
               "fullTitle": "Fluxo de Criação de Conta - EBAC Store Deve criar uma conta com sucesso e verificar no Profile",
               "timedOut": null,
-              "duration": 36584,
+              "duration": 7244,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -47,12 +47,12 @@
               "context": null,
               "code": "const userData = {\n  firstName: 'Teste',\n  lastName: 'Sobrenome',\n  phone: '1234567890',\n  email: 'teste1@exemplo.com',\n  password: 'senha123'\n};\n_signupPage.default.visit();\n_signupPage.default.fillForm(userData);\n_signupPage.default.submit();\ncy.get('[href=\"/Tab/Account\"] > .r-g6644c').click();\ncy.get('[data-testid=\"CustomerName\"]').should('exist');",
               "err": {
-                "message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is not visible:\n\n`<span class=\"css-1jxf684 r-g6644c r-1enofrn r-1yt7n81\" style=\"color: rgb(51, 144, 124);\">Profile</span>`\n\nThis element `<span.css-1jxf684.r-g6644c.r-1enofrn.r-1yt7n81>` is not visible because its parent `<div.css-175oi2r.r-5kkj8d.r-1p0dtai.r-1d2f490.r-zchlnj.r-105ug2t>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
-                "estack": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is not visible:\n\n`<span class=\"css-1jxf684 r-g6644c r-1enofrn r-1yt7n81\" style=\"color: rgb(51, 144, 124);\">Profile</span>`\n\nThis element `<span.css-1jxf684.r-g6644c.r-1enofrn.r-1yt7n81>` is not visible because its parent `<div.css-175oi2r.r-5kkj8d.r-1p0dtai.r-1d2f490.r-zchlnj.r-105ug2t>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at runVisibilityCheck (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:147001:58)\n    at Object.isStrictlyVisible (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:147015:10)\n    at runAllChecks (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:113413:26)\n    at retryActionability (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:113481:16)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:4285:29)\n    at whenStable (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:145828:68)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:145769:14)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1671:18)\n    at Promise._fulfill (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1615:18)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:5420:46)\nFrom Your Spec Code:\n    at Context.eval (webpack://modulo-22/./cypress/e2e/account/createAccount.cy.js:24:48)",
+                "message": "CypressError: `cy.type()` can only be called on a single element. Your subject contained 2 elements.\n\nhttps://on.cypress.io/type",
+                "estack": "CypressError: `cy.type()` can only be called on a single element. Your subject contained 2 elements.\n\nhttps://on.cypress.io/type\n    at Context.type (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:115422:68)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:140155:19)\nFrom Your Spec Code:\n    at SignupPage.fillForm (webpack://modulo-22/./cypress/pages/signupPage.js:15:39)\n    at Context.eval (webpack://modulo-22/./cypress/e2e/account/createAccount.cy.js:18:15)",
                 "diff": null
               },
-              "uuid": "0cbf017e-7086-4c24-b1cd-866289a7452c",
-              "parentUUID": "6180806b-9a44-431d-8a04-9e2ee8b51043",
+              "uuid": "76682ee1-160b-4943-b506-4227ef439795",
+              "parentUUID": "d8cb1ca5-4d03-4ab1-b2ee-82cd741eba18",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "0cbf017e-7086-4c24-b1cd-866289a7452c"
+            "76682ee1-160b-4943-b506-4227ef439795"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 36584,
+          "duration": 7244,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

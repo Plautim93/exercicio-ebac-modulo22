@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2026-08-03T15:35:11.589Z",
-    "end": "2026-08-03T15:35:20.693Z",
-    "duration": 9104,
+    "start": "2026-08-03T15:44:19.043Z",
+    "end": "2026-08-03T15:44:29.058Z",
+    "duration": 10015,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "da4771c7-7952-4469-a538-0be2f001d0a0",
+      "uuid": "daa2bf5d-d5f5-4499-aeec-fed398cd0491",
       "title": "",
       "fullFile": "cypress/e2e/login/loginAccount.cy.js",
       "file": "cypress/e2e/login/loginAccount.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b5a1ea68-8fd2-4d47-a506-fe2accdb937e",
+          "uuid": "f8f77e82-ec13-42a8-b6ad-6f211bcd9a7e",
           "title": "Fluxo de Login - EBAC Store",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve fazer login com sucesso e verificar no Profile",
               "fullTitle": "Fluxo de Login - EBAC Store Deve fazer login com sucesso e verificar no Profile",
               "timedOut": null,
-              "duration": 8903,
+              "duration": 9822,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const userData = {\n  email: 'teste1@exemplo.com',\n  password: 'senha123'\n};\ncy.get('[data-testid=\"email\"]').type(userData.email);\ncy.get('[data-testid=\"password\"]').type(userData.password);\ncy.get('[data-testid=\"btnLogin\"]').click();\ncy.get('[href=\"/Tab/Account\"] > .r-g6644c').click();\ncy.get('[data-testid=\"CustomerName\"]').should('exist');",
               "err": {},
-              "uuid": "ae1b0c7d-ee71-4004-9979-e554040532e2",
-              "parentUUID": "b5a1ea68-8fd2-4d47-a506-fe2accdb937e",
+              "uuid": "2399e4b5-a8eb-42a9-9bde-e1b8b616a98c",
+              "parentUUID": "f8f77e82-ec13-42a8-b6ad-6f211bcd9a7e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ae1b0c7d-ee71-4004-9979-e554040532e2"
+            "2399e4b5-a8eb-42a9-9bde-e1b8b616a98c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8903,
+          "duration": 9822,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
