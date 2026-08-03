@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2026-08-03T16:22:16.405Z",
-    "end": "2026-08-03T16:22:22.530Z",
-    "duration": 6125,
+    "start": "2026-08-03T16:28:59.176Z",
+    "end": "2026-08-03T16:29:05.904Z",
+    "duration": 6728,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "9cbf7999-0f1f-4e6a-8d76-160c0142e93b",
+      "uuid": "df62e081-ff3a-4b9e-8198-cc9454b9b195",
       "title": "",
       "fullFile": "cypress/e2e/account/createAccount.cy.js",
       "file": "cypress/e2e/account/createAccount.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3317e96c-bccc-463a-954e-c9f52ecaa34f",
+          "uuid": "cac2fdab-9c6b-4b74-a94f-ccabfa09dc7c",
           "title": "Fluxo de Criação de Conta - EBAC Store",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve criar uma conta com sucesso e verificar no Profile",
               "fullTitle": "Fluxo de Criação de Conta - EBAC Store Deve criar uma conta com sucesso e verificar no Profile",
               "timedOut": null,
-              "duration": 6019,
+              "duration": 6616,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "CypressError: `cy.type()` can only be called on a single element. Your subject contained 2 elements.\n\nhttps://on.cypress.io/type\n    at Context.type (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:115422:68)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:140155:19)\nFrom Your Spec Code:\n    at SignupPage.fillForm (webpack://modulo-22/./cypress/pages/signupPage.js:15:39)\n    at Context.eval (webpack://modulo-22/./cypress/e2e/account/createAccount.cy.js:18:15)",
                 "diff": null
               },
-              "uuid": "51ea8878-aff4-4864-9667-bbaf983abcd8",
-              "parentUUID": "3317e96c-bccc-463a-954e-c9f52ecaa34f",
+              "uuid": "73c321c0-9ae8-4392-8571-1c6851cab976",
+              "parentUUID": "cac2fdab-9c6b-4b74-a94f-ccabfa09dc7c",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "51ea8878-aff4-4864-9667-bbaf983abcd8"
+            "73c321c0-9ae8-4392-8571-1c6851cab976"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 6019,
+          "duration": 6616,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

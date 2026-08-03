@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2026-08-03T16:22:23.827Z",
-    "end": "2026-08-03T16:24:24.382Z",
-    "duration": 120555,
+    "start": "2026-08-03T16:29:07.187Z",
+    "end": "2026-08-03T16:31:07.758Z",
+    "duration": 120571,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "aae15938-d779-4222-82b3-a6fc8da9e74e",
+      "uuid": "d585c041-f91d-46ac-8a44-3e1ab2d366cf",
       "title": "",
       "fullFile": "cypress/e2e/login/loginAccount.cy.js",
       "file": "cypress/e2e/login/loginAccount.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d57f2665-1122-493f-be91-a6228a8ad1c5",
+          "uuid": "a19e3c3b-49a9-405c-8915-250888ee1d6c",
           "title": "Fluxo de Login - EBAC Store",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve fazer login com sucesso e verificar no Profile",
               "fullTitle": "Fluxo de Login - EBAC Store Deve fazer login com sucesso e verificar no Profile",
               "timedOut": null,
-              "duration": 120318,
+              "duration": 120414,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "CypressError: Timed out after waiting `120000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `120000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping all of the remaining tests.\n    at timedOutWaitingForPageLoad (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:132731:64)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:133725:16)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://modulo-22/./cypress/support/commands.js:3:5)",
                 "diff": null
               },
-              "uuid": "b980c1b8-172c-4e20-b950-e32c8e6b29b3",
-              "parentUUID": "d57f2665-1122-493f-be91-a6228a8ad1c5",
+              "uuid": "8a706388-1ef1-4543-90a0-d4dd7a2c769a",
+              "parentUUID": "a19e3c3b-49a9-405c-8915-250888ee1d6c",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "b980c1b8-172c-4e20-b950-e32c8e6b29b3"
+            "8a706388-1ef1-4543-90a0-d4dd7a2c769a"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 120318,
+          "duration": 120414,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
