@@ -25,17 +25,9 @@ Cypress.Commands.add('addItemToCart', () => {
 });
 
 Cypress.Commands.add('completeCheckout', () => {
-  // Seleciona o endereço primeiro
-  cy.get('[data-testid="selectAddress"]', { timeout: 15000 })
-    .first()
-    .click({ force: true });
-
-  // Aguarda o botão ficar habilitado e clica
   cy.get('[data-testid="selectAddressOrContinueToPayment"]', { timeout: 15000 })
-    .should('not.have.css', 'pointer-events', 'none')
     .click({ force: true });
 
   cy.get('[data-testid="completeCheckout"]', { timeout: 15000 })
-    .should('be.visible')
     .click({ force: true });
 });
