@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2026-08-03T16:52:28.130Z",
-    "end": "2026-08-03T16:52:55.227Z",
-    "duration": 27097,
+    "start": "2026-08-03T17:01:18.089Z",
+    "end": "2026-08-03T17:01:54.660Z",
+    "duration": 36571,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,41 +18,41 @@
   },
   "results": [
     {
-      "uuid": "2ebd5ba1-da05-4713-a8f1-410d0f25ca79",
+      "uuid": "ab339792-95c5-44cd-9782-b4431ebef0b7",
       "title": "",
-      "fullFile": "cypress/e2e/checkout.cy.js",
-      "file": "cypress/e2e/checkout.cy.js",
+      "fullFile": "cypress/e2e/account/createAccount.cy.js",
+      "file": "cypress/e2e/account/createAccount.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "81661b7c-0ac8-4e83-8259-04a79d17beb2",
-          "title": "Fluxo de Compra após Login - EBAC Store",
+          "uuid": "224b15c0-5423-4d40-885f-657a5bb50b9f",
+          "title": "Fluxo de Criação de Conta - EBAC Store",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Deve adicionar o item ao carrinho e finalizar a compra",
-              "fullTitle": "Fluxo de Compra após Login - EBAC Store Deve adicionar o item ao carrinho e finalizar a compra",
+              "title": "Deve criar uma conta com sucesso e verificar no Profile",
+              "fullTitle": "Fluxo de Criação de Conta - EBAC Store Deve criar uma conta com sucesso e verificar no Profile",
               "timedOut": null,
-              "duration": 27049,
+              "duration": 36520,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.addItemToCart();\ncy.completeCheckout();\ncy.contains('Go Back Home').should('be.visible');",
+              "code": "const userData = {\n  firstName: 'Teste',\n  lastName: 'Sobrenome',\n  phone: '1234567890',\n  email: 'teste1@exemplo.com',\n  password: 'senha123'\n};\n_signupPage.default.visit();\n_signupPage.default.fillForm(userData);\n_signupPage.default.submit();\ncy.get('[href=\"/Tab/Account\"] > .r-g6644c').click();\ncy.get('[data-testid=\"CustomerName\"]').should('exist');",
               "err": {
-                "message": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `[data-testid=\"completeCheckout\"]`, but never found it.",
-                "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `[data-testid=\"completeCheckout\"]`, but never found it.\n    at Context.eval (webpack://modulo-22/./cypress/support/commands.js:31:5)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:140147:43)",
+                "message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is not visible:\n\n`<span class=\"css-1jxf684 r-g6644c r-1enofrn r-1yt7n81\" style=\"color: rgb(51, 144, 124);\">Profile</span>`\n\nThis element `<span.css-1jxf684.r-g6644c.r-1enofrn.r-1yt7n81>` is not visible because its parent `<div.css-175oi2r.r-5kkj8d.r-1p0dtai.r-1d2f490.r-zchlnj.r-105ug2t>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is not visible:\n\n`<span class=\"css-1jxf684 r-g6644c r-1enofrn r-1yt7n81\" style=\"color: rgb(51, 144, 124);\">Profile</span>`\n\nThis element `<span.css-1jxf684.r-g6644c.r-1enofrn.r-1yt7n81>` is not visible because its parent `<div.css-175oi2r.r-5kkj8d.r-1p0dtai.r-1d2f490.r-zchlnj.r-105ug2t>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at runVisibilityCheck (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:147001:58)\n    at Object.isStrictlyVisible (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:147015:10)\n    at runAllChecks (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:113413:26)\n    at retryActionability (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:113481:16)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:4285:29)\n    at whenStable (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:145828:68)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:145769:14)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1671:18)\n    at Promise._fulfill (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1615:18)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:5420:46)\nFrom Your Spec Code:\n    at Context.eval (webpack://modulo-22/./cypress/e2e/account/createAccount.cy.js:24:48)",
                 "diff": null
               },
-              "uuid": "56e911b5-57bf-4320-9cc1-e7aecc66e0e3",
-              "parentUUID": "81661b7c-0ac8-4e83-8259-04a79d17beb2",
+              "uuid": "c01afe35-5e4c-4cc7-8eda-56ed585b268a",
+              "parentUUID": "224b15c0-5423-4d40-885f-657a5bb50b9f",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "56e911b5-57bf-4320-9cc1-e7aecc66e0e3"
+            "c01afe35-5e4c-4cc7-8eda-56ed585b268a"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 27049,
+          "duration": 36520,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
