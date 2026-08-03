@@ -1,0 +1,39 @@
+name: CI - Testes Cypress Modulo 22
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  cypress-tests:
+    name:  Executar Testes e Publicar Relatório
+    runs-on: ubuntu-latest
+
+    steps:
+      - name:  Checkout do repositório
+        uses: actions/checkout@v3
+
+      - name:  Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name:  Instalar dependências
+        run: npm install
+
+      - name:  Executar testes Cypress
+        run: npx cypress run --reporter mochawesome --reporter-options reportDir=mochawesome-report,overwrite=false,html=false,json=true
+        continue-on-error: true
+
+      - name:  Mesclar relatórios JSON
+        run: npx mochawesome-merge ./mochawesome-report/mochawesome*.json > mochawesome-report/report.json
+
+      - name:  Gerar relatório HTML
+        run: npx marge mochawesome-report/report.json --reportDir mochawesome-report
+
+      - name:  Publicar relatório no GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./mochawesome-report
