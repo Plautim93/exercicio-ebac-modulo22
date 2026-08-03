@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2026-08-03T16:35:07.030Z",
-    "end": "2026-08-03T16:35:13.613Z",
-    "duration": 6583,
+    "start": "2026-08-03T16:43:55.467Z",
+    "end": "2026-08-03T16:44:33.595Z",
+    "duration": 38128,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f07ba2ff-0fda-4556-a24a-a417982d5f3e",
+      "uuid": "ff8fb082-5753-46d6-ad1b-b6c2d5c67b5e",
       "title": "",
       "fullFile": "cypress/e2e/account/createAccount.cy.js",
       "file": "cypress/e2e/account/createAccount.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6e874f16-2e00-4859-939f-043908f8e0b6",
+          "uuid": "d2f4cae9-9997-4bec-9ec8-0641441ac55f",
           "title": "Fluxo de Criação de Conta - EBAC Store",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve criar uma conta com sucesso e verificar no Profile",
               "fullTitle": "Fluxo de Criação de Conta - EBAC Store Deve criar uma conta com sucesso e verificar no Profile",
               "timedOut": null,
-              "duration": 6318,
+              "duration": 38040,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -47,12 +47,12 @@
               "context": null,
               "code": "const userData = {\n  firstName: 'Teste',\n  lastName: 'Sobrenome',\n  phone: '1234567890',\n  email: 'teste1@exemplo.com',\n  password: 'senha123'\n};\n_signupPage.default.visit();\n_signupPage.default.fillForm(userData);\n_signupPage.default.submit();\ncy.get('[href=\"/Tab/Account\"] > .r-g6644c').click();\ncy.get('[data-testid=\"CustomerName\"]').should('exist');",
               "err": {
-                "message": "CypressError: `cy.type()` can only be called on a single element. Your subject contained 2 elements.\n\nhttps://on.cypress.io/type",
-                "estack": "CypressError: `cy.type()` can only be called on a single element. Your subject contained 2 elements.\n\nhttps://on.cypress.io/type\n    at Context.type (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:115422:68)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:140155:19)\nFrom Your Spec Code:\n    at SignupPage.fillForm (webpack://modulo-22/./cypress/pages/signupPage.js:15:39)\n    at Context.eval (webpack://modulo-22/./cypress/e2e/account/createAccount.cy.js:18:15)",
+                "message": "CypressError: Timed out retrying after 30000ms: `cy.type()` failed because this element is not visible:\n\n`<input autocorrect=\"off\" autocapitalize=\"none\" placeholder=\"Password\" autocomplete=\"on\" dir=\"auto\" enterkeyhint=\"next\" rows=\"1\" spellcheck=\"false\" type=\"password\" class=\"css-11aywtz r-6taxm2 r-1qyj3m3 r-qklmqi r-11mg6pl r-1llaxt6 r-1mbl9jf r-jwli3a r-g6644c r-ubezar r-tmtnm0 r-l00any r-11dg65z r-ubg91z\" data-testid=\"password\" value=\"\" style=\"--placeholderTextColor: #fff;\">`\n\nThis element `<input.css-11aywtz.r-6taxm2.r-1qyj3m3.r-qklmqi.r-11mg6pl.r-1llaxt6.r-1mbl9jf.r-jwli3a.r-g6644c.r-ubezar.r-tmtnm0.r-l00any.r-11dg65z.r-ubg91z>` is not visible because its parent `<div.css-175oi2r.r-13awgt0.r-1d5kdc7.r-1p0dtai.r-1d2f490.r-u8s1d.r-zchlnj.r-ipm5af>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 30000ms: `cy.type()` failed because this element is not visible:\n\n`<input autocorrect=\"off\" autocapitalize=\"none\" placeholder=\"Password\" autocomplete=\"on\" dir=\"auto\" enterkeyhint=\"next\" rows=\"1\" spellcheck=\"false\" type=\"password\" class=\"css-11aywtz r-6taxm2 r-1qyj3m3 r-qklmqi r-11mg6pl r-1llaxt6 r-1mbl9jf r-jwli3a r-g6644c r-ubezar r-tmtnm0 r-l00any r-11dg65z r-ubg91z\" data-testid=\"password\" value=\"\" style=\"--placeholderTextColor: #fff;\">`\n\nThis element `<input.css-11aywtz.r-6taxm2.r-1qyj3m3.r-qklmqi.r-11mg6pl.r-1llaxt6.r-1mbl9jf.r-jwli3a.r-g6644c.r-ubezar.r-tmtnm0.r-l00any.r-11dg65z.r-ubg91z>` is not visible because its parent `<div.css-175oi2r.r-13awgt0.r-1d5kdc7.r-1p0dtai.r-1d2f490.r-u8s1d.r-zchlnj.r-ipm5af>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at runVisibilityCheck (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:147001:58)\n    at Object.isStrictlyVisible (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:147015:10)\n    at runAllChecks (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:113413:26)\n    at retryActionability (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:113481:16)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:4285:29)\n    at whenStable (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:145828:68)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:145769:14)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1671:18)\n    at Promise._fulfill (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1615:18)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:5420:46)\nFrom Your Spec Code:\n    at SignupPage.fillForm (webpack://modulo-22/./cypress/pages/signupPage.js:15:45)\n    at Context.eval (webpack://modulo-22/./cypress/e2e/account/createAccount.cy.js:18:15)",
                 "diff": null
               },
-              "uuid": "6497208c-0c23-46b0-8dc0-ed9d567f2b20",
-              "parentUUID": "6e874f16-2e00-4859-939f-043908f8e0b6",
+              "uuid": "a1dc29d7-d37f-4f7f-b179-e9b63bbe1654",
+              "parentUUID": "d2f4cae9-9997-4bec-9ec8-0641441ac55f",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "6497208c-0c23-46b0-8dc0-ed9d567f2b20"
+            "a1dc29d7-d37f-4f7f-b179-e9b63bbe1654"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 6318,
+          "duration": 38040,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

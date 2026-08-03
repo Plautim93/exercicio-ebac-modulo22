@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2026-08-03T16:35:26.035Z",
-    "end": "2026-08-03T16:35:51.183Z",
-    "duration": 25148,
+    "start": "2026-08-03T16:44:45.694Z",
+    "end": "2026-08-03T16:45:10.470Z",
+    "duration": 24776,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "378ce83d-435b-4d63-bd44-e001fbf597f5",
+      "uuid": "c2d0890c-7ce0-4f74-be8f-8020c1cfe831",
       "title": "",
       "fullFile": "cypress/e2e/checkout.cy.js",
       "file": "cypress/e2e/checkout.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ecd68699-bbbc-461f-a8a3-18a6cc07245a",
+          "uuid": "54f0699a-cc73-41d2-8a66-35a43d15323a",
           "title": "Fluxo de Compra após Login - EBAC Store",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve adicionar o item ao carrinho e finalizar a compra",
               "fullTitle": "Fluxo de Compra após Login - EBAC Store Deve adicionar o item ao carrinho e finalizar a compra",
               "timedOut": null,
-              "duration": 25098,
+              "duration": 24716,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -47,12 +47,12 @@
               "context": null,
               "code": "cy.addItemToCart();\ncy.completeCheckout();\ncy.contains('Go Back Home').should('be.visible');",
               "err": {
-                "message": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `[data-testid=\"selectAddress\"]`, but never found it.",
-                "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `[data-testid=\"selectAddress\"]`, but never found it.\n    at Context.eval (webpack://modulo-22/./cypress/support/commands.js:29:5)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:140147:43)",
+                "message": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `[data-testid=\"completeCheckout\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `[data-testid=\"completeCheckout\"]`, but never found it.\n    at Context.eval (webpack://modulo-22/./cypress/support/commands.js:31:5)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:140147:43)",
                 "diff": null
               },
-              "uuid": "7009d8aa-7aeb-47f0-9d23-824d227ef031",
-              "parentUUID": "ecd68699-bbbc-461f-a8a3-18a6cc07245a",
+              "uuid": "7f30379c-004a-465f-9a23-771a4c4a0531",
+              "parentUUID": "54f0699a-cc73-41d2-8a66-35a43d15323a",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "7009d8aa-7aeb-47f0-9d23-824d227ef031"
+            "7f30379c-004a-465f-9a23-771a4c4a0531"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 25098,
+          "duration": 24716,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
