@@ -11,12 +11,7 @@ Cypress.Commands.add('login', (email, password) => {
 });
 
 Cypress.Commands.add('addItemToCart', () => {
-  cy.visit('/');
-  cy.get('[data-testid="banner"]', { timeout: 30000 })
-    .should('be.visible')
-    .click();
-  
-  cy.get('[data-testid="productDetails"]', { timeout: 15000 })
+  cy.get('[data-testid="productDetails"]', { timeout: 30000 })
     .first()
     .click({ force: true });
   
