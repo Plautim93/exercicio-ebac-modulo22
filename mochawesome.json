@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2026-08-03T16:28:21.487Z",
-    "end": "2026-08-03T16:28:48.295Z",
-    "duration": 26808,
+    "start": "2026-08-03T16:35:07.030Z",
+    "end": "2026-08-03T16:35:13.613Z",
+    "duration": 6583,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,41 +18,41 @@
   },
   "results": [
     {
-      "uuid": "3d5a5065-f945-4eb7-ae56-83344271dbef",
+      "uuid": "f07ba2ff-0fda-4556-a24a-a417982d5f3e",
       "title": "",
-      "fullFile": "cypress/e2e/checkout.cy.js",
-      "file": "cypress/e2e/checkout.cy.js",
+      "fullFile": "cypress/e2e/account/createAccount.cy.js",
+      "file": "cypress/e2e/account/createAccount.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "48218db0-e1ae-4b25-804c-80725bcd7df7",
-          "title": "Fluxo de Compra após Login - EBAC Store",
+          "uuid": "6e874f16-2e00-4859-939f-043908f8e0b6",
+          "title": "Fluxo de Criação de Conta - EBAC Store",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Deve adicionar o item ao carrinho e finalizar a compra",
-              "fullTitle": "Fluxo de Compra após Login - EBAC Store Deve adicionar o item ao carrinho e finalizar a compra",
+              "title": "Deve criar uma conta com sucesso e verificar no Profile",
+              "fullTitle": "Fluxo de Criação de Conta - EBAC Store Deve criar uma conta com sucesso e verificar no Profile",
               "timedOut": null,
-              "duration": 26733,
+              "duration": 6318,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.addItemToCart();\ncy.completeCheckout();\ncy.contains('Go Back Home').should('be.visible');",
+              "code": "const userData = {\n  firstName: 'Teste',\n  lastName: 'Sobrenome',\n  phone: '1234567890',\n  email: 'teste1@exemplo.com',\n  password: 'senha123'\n};\n_signupPage.default.visit();\n_signupPage.default.fillForm(userData);\n_signupPage.default.submit();\ncy.get('[href=\"/Tab/Account\"] > .r-g6644c').click();\ncy.get('[data-testid=\"CustomerName\"]').should('exist');",
               "err": {
-                "message": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `[data-testid=\"selectAddress\"]`, but never found it.",
-                "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `[data-testid=\"selectAddress\"]`, but never found it.\n    at Context.eval (webpack://modulo-22/./cypress/support/commands.js:29:5)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:140147:43)",
+                "message": "CypressError: `cy.type()` can only be called on a single element. Your subject contained 2 elements.\n\nhttps://on.cypress.io/type",
+                "estack": "CypressError: `cy.type()` can only be called on a single element. Your subject contained 2 elements.\n\nhttps://on.cypress.io/type\n    at Context.type (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:115422:68)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:140155:19)\nFrom Your Spec Code:\n    at SignupPage.fillForm (webpack://modulo-22/./cypress/pages/signupPage.js:15:39)\n    at Context.eval (webpack://modulo-22/./cypress/e2e/account/createAccount.cy.js:18:15)",
                 "diff": null
               },
-              "uuid": "d11f4ccc-1cda-4e27-9583-dfb2804759fc",
-              "parentUUID": "48218db0-e1ae-4b25-804c-80725bcd7df7",
+              "uuid": "6497208c-0c23-46b0-8dc0-ed9d567f2b20",
+              "parentUUID": "6e874f16-2e00-4859-939f-043908f8e0b6",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "d11f4ccc-1cda-4e27-9583-dfb2804759fc"
+            "6497208c-0c23-46b0-8dc0-ed9d567f2b20"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 26733,
+          "duration": 6318,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
