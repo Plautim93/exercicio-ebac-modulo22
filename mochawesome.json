@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2026-08-03T15:41:29.803Z",
-    "end": "2026-08-03T15:42:07.203Z",
-    "duration": 37400,
+    "start": "2026-08-03T16:21:25.125Z",
+    "end": "2026-08-03T16:22:06.562Z",
+    "duration": 41437,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b9a7fb01-5cef-4070-b32b-601b79264c7e",
+      "uuid": "6d810567-c960-4447-b296-8a7da3694691",
       "title": "",
       "fullFile": "cypress/e2e/checkout.cy.js",
       "file": "cypress/e2e/checkout.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e71c0326-fa50-457e-9656-ec299b41667e",
+          "uuid": "0d6b59cc-3ec3-4135-b2d1-3a4c571d71f8",
           "title": "Fluxo de Compra após Login - EBAC Store",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve adicionar o item ao carrinho e finalizar a compra",
               "fullTitle": "Fluxo de Compra após Login - EBAC Store Deve adicionar o item ao carrinho e finalizar a compra",
               "timedOut": null,
-              "duration": 37247,
+              "duration": 41402,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -47,12 +47,12 @@
               "context": null,
               "code": "cy.addItemToCart();\ncy.completeCheckout();\ncy.contains('Go Back Home').should('be.visible');",
               "err": {
-                "message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[data-testid=\"banner\"]`, but never found it.",
-                "estack": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[data-testid=\"banner\"]`, but never found it.\n    at Context.eval (webpack://modulo-22/./cypress/support/commands.js:16:5)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:140147:43)",
+                "message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element:\n\n`<div aria-disabled=\"true\" tabindex=\"-1\" class=\"css-175oi2r r-1i6wzkk r-lrvibr r-1awozwy r-1kihuf0 r-1llaxt6 r-ur6pnr r-1777fci r-u9wvl5 r-1j7aebl r-12vffkv\" data-testid=\"selectAddressOrContinueToPayment\" style=\"background-color: rgb(128, 128, 128); transition-duration: 0s;\">...</div>`\n\nhas CSS `pointer-events: none`\n\n`pointer-events: none` prevents user mouse interaction.\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element:\n\n`<div aria-disabled=\"true\" tabindex=\"-1\" class=\"css-175oi2r r-1i6wzkk r-lrvibr r-1awozwy r-1kihuf0 r-1llaxt6 r-ur6pnr r-1777fci r-u9wvl5 r-1j7aebl r-12vffkv\" data-testid=\"selectAddressOrContinueToPayment\" style=\"background-color: rgb(128, 128, 128); transition-duration: 0s;\">...</div>`\n\nhas CSS `pointer-events: none`\n\n`pointer-events: none` prevents user mouse interaction.\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureElDoesNotHaveCSS (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:112998:66)\n    at ensureDescendents (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:113106:5)\n    at ensureDescendentsAndScroll (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:113114:14)\n    at ensureElIsNotCovered (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:113245:5)\n    at runAllChecks (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:113444:52)\n    at retryActionability (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:113481:16)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:4285:29)\n    at whenStable (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:145828:68)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:145769:14)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1671:18)\n    at Promise._fulfill (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1615:18)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:5420:46)",
                 "diff": null
               },
-              "uuid": "e8ce00f2-448b-4fce-945e-753395e47af7",
-              "parentUUID": "e71c0326-fa50-457e-9656-ec299b41667e",
+              "uuid": "b573034c-d3eb-4938-8b59-f57732f8389d",
+              "parentUUID": "0d6b59cc-3ec3-4135-b2d1-3a4c571d71f8",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "e8ce00f2-448b-4fce-945e-753395e47af7"
+            "b573034c-d3eb-4938-8b59-f57732f8389d"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 37247,
+          "duration": 41402,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
