@@ -1,5 +1,5 @@
 
-import SignupPage from '../../pages/SignupPage';
+import SignupPage from '../../pages/signupPage';
 
 describe('Fluxo de Criação de Conta - EBAC Store', () => {
   it('Deve criar uma conta com sucesso e verificar no Profile', () => {
