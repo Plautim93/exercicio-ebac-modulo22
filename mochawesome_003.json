@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2026-08-03T16:45:11.809Z",
-    "end": "2026-08-03T16:45:19.533Z",
-    "duration": 7724,
+    "failures": 1,
+    "start": "2026-08-03T16:52:56.478Z",
+    "end": "2026-08-03T16:54:56.960Z",
+    "duration": 120482,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "aabff6d7-544e-4cf7-ba17-1b502fd795b8",
+      "uuid": "39e06c1a-8a1d-41b7-8f75-0bf9d1bc9dc4",
       "title": "",
       "fullFile": "cypress/e2e/spec.cy.js",
       "file": "cypress/e2e/spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "da164149-fa99-448b-87b3-cdd31e719fb5",
+          "uuid": "654dc215-8157-4356-80fa-1c7c61f17b2f",
           "title": "template spec",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,33 @@
               "title": "passes",
               "fullTitle": "template spec passes",
               "timedOut": null,
-              "duration": 7704,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
+              "duration": 120417,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "cy.visit('https://example.cypress.io');",
-              "err": {},
-              "uuid": "064596fa-9ce0-45cb-9a65-045e8e222fd5",
-              "parentUUID": "da164149-fa99-448b-87b3-cdd31e719fb5",
+              "err": {
+                "message": "CypressError: Timed out after waiting `120000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `120000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping all of the remaining tests.",
+                "estack": "CypressError: Timed out after waiting `120000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `120000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping all of the remaining tests.\n    at timedOutWaitingForPageLoad (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:132731:64)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:133725:16)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://modulo-22/./cypress/support/commands.js:3:5)",
+                "diff": null
+              },
+              "uuid": "081ceddc-5b32-405e-9bf4-bcccc6e397ec",
+              "parentUUID": "654dc215-8157-4356-80fa-1c7c61f17b2f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "064596fa-9ce0-45cb-9a65-045e8e222fd5"
+          "passes": [],
+          "failures": [
+            "081ceddc-5b32-405e-9bf4-bcccc6e397ec"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7704,
+          "duration": 120417,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
